@@ -39,3 +39,8 @@ group :test do
   gem 'database_cleaner', '1.0.1'
   gem 'email_spec'
 end
+
+#deployment 
+gem 'capistrano', '~> 3.1'
+gem 'dove', github: "geun/dove"
+gem 'capistrano-rails'
