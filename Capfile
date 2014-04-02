@@ -26,3 +26,10 @@ require 'capistrano/dove'
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
 Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
+
+require 'capistrano/rbenv/rbenv'
+require 'capistrano/redis/redis'
+require 'capistrano/nodejs/nodejs'
+require 'capistrano/java/java'
+require 'capistrano/elasticsearch/elasticsearch'
+require 'capistrano/logstash/logstash'

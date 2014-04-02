@@ -17,7 +17,7 @@
 
 set :user, 'vagrant'
 server '192.168.33.101',
-      roles: %w{nginx app haproxy},
+      roles: %w{nginx app haproxy redis elasticsearch logstash_forwarder logstash_indexer},
       user: fetch(:user),
       my_property: :my_value
 
